@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch !</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- *************** Stop Watch******************** -->
+<div class="hero">
+    <div class="main">
+        <h1 data-aos="flip-left">STOP WATCH</h1>
+    </div>
+    <div class="containor">
+        <div class="clock"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
+            <div class="heading">
+                <h1 id="hour">0</h1>
+                <h1>&nbsp;:&nbsp;</h1>
+                <h1 id="min">0</h1>
+                <h1>&nbsp;:&nbsp;</h1>
+                <h1 id="sec">0</h1>
+                <h1>&nbsp;:&nbsp;</h1>
+                <h1 id="msec">0</h1>
+            </div>
+        </div>
+        <div class="heading01" data-aos="zoom-in-up">
+            <button id="btn_start" onclick="start()";>START</button>
+            <button  onclick="pasue()";>PAUSE</button>
+            <button  onclick="reset()">RESET</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+</body>
+
+<script src="JS/app.js"></script>
+</html>
